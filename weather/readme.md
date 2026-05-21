@@ -6,6 +6,10 @@
 
 - Search for weather by city name.
 - Display current temperature, humidity, and weather conditions.
+- toggle between Celsius and Fahrenheit for temperature.
+- toggle between km/h and mph for wind speed.
+- Display an appropriate weather icon based on the current weather conditions.
+- Error handling for empty search input.
 - Responsive design for mobile and desktop devices.
 
 ### Technologies Used

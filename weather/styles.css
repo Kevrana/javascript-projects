@@ -23,10 +23,36 @@ body {
     border-radius: 5px;
 }
 
+#city-input:focus {
+    outline: none;
+    border-color: deepskyblue;
+}
+
 #search-button {
     padding: 10px;
     border: none;
     background-color: lightblue;
     color: white;
     border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+#temp-unit-button, #wind-speed-unit-button {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+#temp-unit-button:hover,
+#wind-speed-unit-button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
 }

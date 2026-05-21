@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin's Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div id="weather-container">
         <h1>Kevin's Weather App</h1>
-        <input type="text" id="city-input" placeholder="Enter city name">
-        <button id="search-button">Search</button>
-        <h2 id="city"></h2>
-        <img id="weather-image" width="100px" height="100px">
-        <p><b>Temperature:</b> <span id="temperature"></span>°C</p>
-        <p><b>Condition:</b> <span id="weather-condition"></span></p>
-        <p><b>Wind Speed:</b> <span id="wind-speed"></span>km/h</p>
+        <span style="color: red">
+            <h5 id="city-input-error-msg" name="city-input-error-msg"></h5>
+        </span>
+        <input type="text" id="city-input" name="city-input" placeholder="Enter city name" required>
+        <button id="search-button" name="search-button">Search</button>
+        <button id="temp-unit-button" name="temp-unit-button">Switch to °F</button>
+        <button id="wind-speed-unit-button" name="wind-speed-unit-button">Switch to mph</button>
+        <h2 id="city" name="city"></h2>
+        <img id="weather-image" name="weather-image" width="100px" height="100px">
+        <p><b>Temperature:</b> <span id="temperature" name="temperature"></span> <span id="temp-unit" name="temp-unit">
+                °C</span></p>
+        <p><b>Condition:</b> <span id="weather-condition" name="weather-condition"> Unknown</span></p>
+        <p><b>Wind Speed:</b> <span id="wind-speed" name="wind-speed"></span> <span id="wind-speed-unit"
+                name="wind-speed-unit"> km/h</span></p>
     </div>
     <script src="script.js"></script>
 </body>
