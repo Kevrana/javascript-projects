@@ -4,4 +4,4 @@ This repository contains various JavaScript projects that I have worked on. Each
 
 ## Projects
 
-1. [Weather App](./weather-app/README.md)
+1. [Weather App](./weather/README.md)
