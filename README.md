@@ -5,3 +5,4 @@ This repository contains various JavaScript projects that I have worked on. Each
 ## Projects
 
 1. [Weather App](./weather/)
+1. [Todo List App](./todo_app/)
