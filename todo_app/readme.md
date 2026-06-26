@@ -7,6 +7,7 @@
 - Add new tasks to the list.
 - Mark tasks as complete.
 - Delete tasks from the list.
+- Light and dark mode toggle.
 - Responsive design for mobile and desktop devices.
 
 ### Technologies Used
