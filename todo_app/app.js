@@ -1,6 +1,27 @@
 const todoForm = document.querySelector("form");
 const todoInput = document.getElementById("todo-input");
 const todoListUL = document.getElementById("todo-list");
+const themeButton = document.getElementById("theme-button");
+
+const savedTheme = localStorage.getItem("theme");
+const systemPrefersLight = window.matchMedia(
+	"(prefers-color-scheme: light)",
+).matches;
+
+if (savedTheme === "light" || (!savedTheme && systemPrefersLight)) {
+	document.body.classList.add("light-theme");
+}
+
+themeButton.addEventListener("click", () => {
+	document.body.classList.toggle("light-theme");
+
+	// Save the current theme to localStorage
+	let theme = "dark";
+	if (document.body.classList.contains("light-theme")) {
+		theme = "light";
+	}
+	localStorage.setItem("theme", theme);
+});
 
 let allTodos = getTodos();
 updateTodoList();
