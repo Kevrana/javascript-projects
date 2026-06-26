@@ -61,6 +61,8 @@ function createTodoItem(todo, todoIndex) {
 
 function deleteTodoItem(todoIndex) {
 	allTodos = allTodos.filter((_, i) => i !== todoIndex);
+	saveTodos();
+	updateTodoList();
 }
 
 function saveTodos() {
