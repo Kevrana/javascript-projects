@@ -86,9 +86,8 @@ function createTodoItem(todo, todoIndex) {
 	checkbox.addEventListener("change", () => {
 		allTodos[todoIndex].completed = checkbox.checked;
 		saveTodos();
-		checkbox.checked = todo.completed;
 	});
-
+	checkbox.checked = todo.completed;
 	return todoLI;
 }
 
